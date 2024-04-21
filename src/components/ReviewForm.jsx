@@ -3,9 +3,6 @@ import {
   BsFillEmojiSmileFill,
   BsFillEmojiNeutralFill,
   BsFillEmojiFrownFill,
-  BsEmojiNeutralFill,
-  BsEmojiSmileFill,
-  BsEmojiHeartEyesFill,
 } from "react-icons/bs";
 
 import "./ReviewForm.css";
@@ -21,17 +18,17 @@ const ReviewForm = () => {
         </label>
         <label className="radio-container">
           <input type="radio" value="neutral" name="review" required />
-          <BsEmojiNeutralFill />
+          <BsFillEmojiNeutralFill />
           <p>Neutral</p>
         </label>
         <label className="radio-container">
           <input type="radio" value="satisfied" name="review" required />
-          <BsEmojiSmileFill />
+          <BsFillEmojiFrownFill />
           <p>Satisfied</p>
         </label>
         <label className="radio-container">
           <input type="radio" value="very_satisfied" name="review" required />
-          <BsEmojiHeartEyesFill />
+          <BsFillEmojiHeartEyesFill />
           <p>Very Satisfied</p>
         </label>
       </div>
